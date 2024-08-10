@@ -1,0 +1,75 @@
+        /*********************** 레이아웃 관련 스타일 ****************************/
+        * { 
+            box-sizing: border-box; 
+            /* border: 1px solid #ee2211; */
+        }
+
+        html, body { padding: 0px; margin: 0px; width: 100%; height: 100%; }
+        .wrap { width: 100%; height: 100%; }
+
+        #header { position: fixed; width: 100%; height: 60px; padding: 0 10%; background-color: white; }
+        #content { width: 100%; padding-top: 60px; display:flex; flex-direction: column;}
+        #footer { width: 100%; height: 10%; }
+        /**********************************************************************/
+
+        /********************* 헤더 영역 **************************************/
+
+        #nav { list-style-type: none; width: 100%; height:100%; margin: 0; padding: 0; }
+        #nav > li { float: left; width: 100px; height: 100%; text-align: center; }
+        #nav > li > a { text-decoration: none; color: #008cff; line-height: 60px; font-size: 20px; font-weight: 900; }
+        #nav > li:hover { background-color: #008cff; }
+        #nav > li:hover > a { color: white; text-decoration: underline; }
+
+        /**********************************************************************/
+
+        /********************* 컨텐츠 영역 *************************************/
+        #content > div { background-color: #008cff; color: white; }
+
+        #about { width: 100%; height: 100%; padding: 3% 0; display: flex; flex-wrap: wrap; }
+        #about > #profile { 
+            transition: all 1s; width: 500px; height: 500px; margin:auto; 
+            border-radius: 50%; border: 3px solid #005194;  background-color: white;
+            background-image: url("../../images/profile.png"); background-repeat: no-repeat; background-size: contain; }
+        #about > #profile:hover { box-shadow: 0px 0px 30px #00325a;}
+        #about > table { width: 500px; height: 50%; margin: auto;  }
+        #about > table th { font-size: 20px; text-align: left; }
+
+        #project { width: 100%; height: 100%; padding: 10px 5%; display: grid; grid-template-columns: 1fr 1fr 1fr; }
+        #project .prj { margin: 3%; height: 350px; background-color: white; border-radius: 20px;}
+        #project .prj-image { background-image: url("../../images/programming.jpg"); width: 96%; height: 45%; background-size: cover; background-repeat: no-repeat; margin: 2%; border-radius: 20px; }
+        #project .prj-comment table { width: 100%; padding: 5%; color:#005194; line-height: 2.5em; }
+        #project .prj-comment table * { border-bottom: 1px dotted #008cff; }
+        /**********************************************************************/
+
+        /********************* 푸터 영역 **************************************/
+        #contact { text-align: center; }
+
+        #contact #link-area { width: 100%; position: relative; }
+
+        #link-area ul { width:100%; padding:0;  display: flex; justify-content: center; position:absolute; margin: auto;}
+        #link-area li { margin: 1.2em; }
+        #link-area ul, #link-area li { list-style-type: none; float: left; }
+
+        #link-area a { width: 32px; height: 32px; display: inline-block; }
+        
+
+        /**********************************************************************/        
+
+        /*********************** 공통 스타일 ***********************************/
+        .f-right { display: flex; justify-content: right; }
+        .w-100 { width: 100%; }
+        .w-80 { width: 80%; }
+
+        .icon-github { background-image: url("../../images/github.png"); }
+        .icon-blog { background-image: url("../../images/blogger.png");}
+
+        button.btn-move-top { 
+            position: fixed; bottom: 10px; right:10px; 
+            width: 50px; height: 50px; 
+            border-radius: 50%; border:none; color:#008cff; background-color:white; font-size: 1.5em;
+            cursor: pointer;
+            transition: all 1s; 
+        }
+        button.btn-move-top:hover { box-shadow: 0px 0px 30px #00325a; text-shadow: 0px 0px 10px #00325a; }
+        hr { border: 2px dashed #008cff; }
+        /**********************************************************************/

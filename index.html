@@ -3,11 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자바 스크립트 개요</title>
+    <title>나의 포트폴리오</title>
 
-    <script src="resources/js/01_sample.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h2>ㅋㅋㅋㅋㅋ 안녕?</h2>
+    <div class="wrap">
+        <div id="header">
+            <ul id="nav" class="f-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <hr class="w-100">
+            <div id="about">
+                <div id="profile"></div>
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="50">
+                    </colgroup>
+                    <tr>
+                        <th>이름</th>
+                        <td>뇽뇽</td>
+                    </tr>
+                    <tr>
+                        <th>생년월일</th>
+                        <td>04.08.09</td>
+                    </tr>
+                    <tr>
+                        <th>거주지</th>
+                        <td>서울시 강남구</td>
+                    </tr>
+                    <tr>
+                        <th>학교/전공</th>
+                        <td>KH대학교/자바개발자학부</td>
+                    </tr>
+                    <tr>
+                        <th>한마디</th>
+                        <td>모두 잘하고 있어요 :) 화이팅! 언제나 난 네편!</td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="w-80">
+            <div id="project">
+                <div class="prj">
+                    <div class="prj-image"></div>
+                    <div class="prj-comment">
+                        <table>
+                            <tr>
+                                <th>일시</th>
+                                <td>2024-08-09</td>
+                            </tr>
+                            <tr>
+                                <th>주제</th>
+                                <td>개발자로의 여정</td>
+                            </tr>
+                            <tr>
+                                <th>사용 기술</th>
+                                <td>Java</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="prj">
+                    <div class="prj-image"></div>
+                    <div class="prj-comment">
+                        <table>
+                            <tr>
+                                <th>일시</th>
+                                <td>2024-08-09</td>
+                            </tr>
+                            <tr>
+                                <th>주제</th>
+                                <td>개발자로의 여정</td>
+                            </tr>
+                            <tr>
+                                <th>사용 기술</th>
+                                <td>Java</td>
+                            </tr>
+                        </table>                        
+                    </div>
+                </div>
+                
+                <div class="prj">
+                    <div class="prj-image"></div>
+                    <div class="prj-comment">
+                        <table>
+                            <tr>
+                                <th>일시</th>
+                                <td>2024-08-09</td>
+                            </tr>
+                            <tr>
+                                <th>주제</th>
+                                <td>개발자로의 여정</td>
+                            </tr>
+                            <tr>
+                                <th>사용 기술</th>
+                                <td>Java</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="prj">
+                    <div class="prj-image"></div>
+                    <div class="prj-comment">
+                        <table>
+                            <tr>
+                                <th>일시</th>
+                                <td>2024-08-09</td>
+                            </tr>
+                            <tr>
+                                <th>주제</th>
+                                <td>개발자로의 여정</td>
+                            </tr>
+                            <tr>
+                                <th>사용 기술</th>
+                                <td>Java</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="prj">
+                    <div class="prj-image"></div>
+                    <div class="prj-comment">
+                        <table>
+                            <tr>
+                                <th>일시</th>
+                                <td>2024-08-09</td>
+                            </tr>
+                            <tr>
+                                <th>주제</th>
+                                <td>개발자로의 여정</td>
+                            </tr>
+                            <tr>
+                                <th>사용 기술</th>
+                                <td>Java</td>
+                            </tr>
+                        </table>                        
+                    </div>
+                </div>
+                
+                <div class="prj">
+                    <div class="prj-image"></div>
+                    <div class="prj-comment">
+                        <table>
+                            <tr>
+                                <th>일시</th>
+                                <td>2024-08-09</td>
+                            </tr>
+                            <tr>
+                                <th>주제</th>
+                                <td>개발자로의 여정</td>
+                            </tr>
+                            <tr>
+                                <th>사용 기술</th>
+                                <td>Java</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>                        
+            </div>
+            <hr class="w-100">            
+        </div>
+        <div id="footer">
+            <div id="contact">
+                <h2>Contact</h2>
+                <div id="link-area">
+                    <ul>
+                        <li><a href="https://github.com/sjlim-kh-2024" target="_blank" class="icon-github"></a></li>
+                        <li><a href="https://github.com/sjlim-kh-2024" target="_blank" class="icon-blog"></a></li>
+                    </ul>
+                    <br clear="both">
+                </div>
+                <br><br>
+                <p>&copy; 2024 </p>
+            </div>
+        </div>
+
+        <!-- 버튼 클릭 시 스크롤의 위치를 최상단으로 이동! -->
+        <button class="btn-move-top" onclick="window.scrollTo(0,0)">▲</button>
+    </div>
 </body>
 </html>
